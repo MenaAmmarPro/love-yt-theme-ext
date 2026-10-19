@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Love Theme</title>
+  <link rel="stylesheet" href="../common/theme.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="lx-head">
+    <span class="lx-heart" aria-hidden="true">&#9829;</span>
+    <h1>Love Theme</h1>
+    <span class="lx-sub">YouTube &amp; friends</span>
+  </header>
+
+  <main>
+    <label class="lx-row">
+      <span>Pink it up</span>
+      <input id="enabled" type="checkbox" aria-label="Turn the theme on">
+    </label>
+
+    <div class="lx-row">
+      <span>Accent colour</span>
+      <input id="accent" type="color" aria-label="Accent colour">
+    </div>
+    <div class="lx-swatches" id="swatches"></div>
+
+    <label class="lx-row">
+      <span>Where</span>
+      <select id="site" aria-label="Target site"></select>
+    </label>
+
+    <div class="lx-preview" id="preview">
+      <div class="lx-preview-bar"></div>
+      <p class="lx-preview-text">Progress bars, links and buttons turn your colour
+        &mdash; and a little <span class="lx-heart" aria-hidden="true">&#9829;</span>
+        floats in the corner.</p>
+    </div>
+
+    <p class="lx-note" id="note">&nbsp;</p>
+
+    <div class="lx-actions">
+      <button id="reset" class="lx-btn lx-btn-ghost" type="button">Reset</button>
+      <button id="open-options" class="lx-btn" type="button">More options</button>
+    </div>
+
+    <p class="lx-hint">Reload an open tab to see the change.</p>
+  </main>
+
+  <script src="../common/api.js"></script>
+  <script src="../common/data.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
