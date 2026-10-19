@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Love Theme — Options</title>
+  <link rel="stylesheet" href="../common/theme.css">
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <header class="lx-head">
+    <span class="lx-heart" aria-hidden="true">&#9829;</span>
+    <h1>Love Theme</h1>
+    <span class="lx-sub">options</span>
+  </header>
+
+  <main class="opt">
+    <p class="opt-intro">Restyle YouTube and a few friends with soft pink and
+      heart accents. Change anything here and reload an open tab to see it.</p>
+
+    <fieldset class="opt-card">
+      <legend>Theme</legend>
+      <label class="lx-row">
+        <span>Turn the theme on</span>
+        <input id="enabled" type="checkbox">
+      </label>
+      <div class="lx-row">
+        <span>Accent colour</span>
+        <input id="accent" type="color">
+      </div>
+      <div class="lx-swatches" id="swatches"></div>
+      <label class="lx-row">
+        <span>Target site</span>
+        <select id="site"></select>
+      </label>
+    </fieldset>
+
+    <fieldset class="opt-card">
+      <legend>Preview</legend>
+      <div class="lx-preview" id="preview">
+        <div class="lx-preview-bar"></div>
+        <p class="opt-preview-text">Progress bars, links, buttons and the little
+          <span class="lx-heart" aria-hidden="true">&#9829;</span> in the corner all
+          take your accent colour.</p>
+        <p class="opt-preview-links"><a href="#" id="preview-link">An example link</a></p>
+      </div>
+    </fieldset>
+
+    <fieldset class="opt-card">
+      <legend>Sites we support</legend>
+      <ul id="site-list" class="opt-sites"></ul>
+      <p class="lx-hint">The default is YouTube. Pick one site, or &ldquo;All of
+        these sites&rdquo; to theme every supported page.</p>
+    </fieldset>
+
+    <div class="lx-actions">
+      <button id="reset" class="lx-btn lx-btn-ghost" type="button">Reset to defaults</button>
+    </div>
+    <p class="lx-note" id="note">&nbsp;</p>
+  </main>
+
+  <script src="../common/api.js"></script>
+  <script src="../common/data.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>
