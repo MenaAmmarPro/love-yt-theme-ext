@@ -1,0 +1,174 @@
+/* love-yt-theme-ext — shared look for the popup and the options page */
+
+:root {
+  --bg: #140b1c;
+  --panel: #1e1229;
+  --panel-2: #261733;
+  --text: #f8f3ff;
+  --muted: #c0aecf;
+  --line: rgba(226, 205, 246, 0.16);
+  --accent: #ff3d8b;
+  --on-accent: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 50% 0%, #33194a 0%, transparent 62%),
+    var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.lx-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.lx-heart {
+  color: var(--accent);
+  font-size: 18px;
+  line-height: 1;
+}
+
+.lx-head h1 {
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+}
+
+.lx-head .lx-sub {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+main { padding: 14px; }
+
+.lx-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.lx-row > span { color: var(--muted); }
+
+input[type="color"] {
+  width: 46px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+select,
+input[type="text"] {
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--panel-2);
+  color: var(--text);
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.lx-swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 4px 0 12px;
+}
+
+.lx-swatch {
+  width: 24px;
+  height: 24px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+}
+
+.lx-swatch[aria-pressed="true"] {
+  border-color: var(--text);
+}
+
+.lx-btn {
+  padding: 8px 13px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--on-accent);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.lx-btn-ghost {
+  background: var(--panel-2);
+  color: var(--text);
+  border-color: var(--line);
+}
+
+.lx-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.lx-note {
+  min-height: 1.2em;
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.lx-preview {
+  margin: 10px 0 0;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+}
+
+.lx-preview-bar {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--accent);
+  margin-bottom: 8px;
+}
+
+.lx-preview a { color: var(--accent); }
+
+.lx-hint {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+fieldset {
+  margin: 0 0 14px;
+  padding: 0;
+  border: 0;
+}
